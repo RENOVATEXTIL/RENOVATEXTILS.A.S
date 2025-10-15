@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RENOVATEXTIL - Viste como el planeta te lo permita</title>
+    <meta name="description" content="Transformamos botellas plásticas en telas sostenibles de alta calidad. Innovación textil eco-friendly para un futuro más verde en la moda." />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'hsl(222.2, 47.4%, 11.2%)',
+                        secondary: 'hsl(210, 40%, 96.1%)',
+                        accent: 'hsl(210, 40%, 96.1%)',
+                        muted: 'hsl(210, 40%, 96.1%)',
+                        border: 'hsl(214.3, 31.8%, 91.4%)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gradient-sustainable {
+            background: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(142, 71%, 45%) 100%);
+        }
+        .gradient-accent {
+            background: linear-gradient(135deg, hsl(217, 91%, 60%) 0%, hsl(221, 83%, 53%) 100%);
+        }
+        .gradient-hero {
+            background: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(173, 80%, 40%) 100%);
+        }
+        .shadow-sustainable {
+            box-shadow: 0 4px 14px 0 rgba(34, 197, 94, 0.2);
+        }
+        .shadow-trust {
+            box-shadow: 0 4px 14px 0 rgba(59, 130, 246, 0.15);
+        }
+        .transition-smooth {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-gray-900">
+                    RENOVATEXTIL S.A.S
+                </div>
+                
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-gray-900 hover:text-green-600 transition-smooth">Inicio</a>
+                    <a href="#nosotros" class="text-gray-900 hover:text-green-600 transition-smooth">Nosotros</a>
+                    <a href="#telas" class="text-gray-900 hover:text-green-600 transition-smooth">Telas</a>
+                    <a href="#contacto" class="text-gray-900 hover:text-green-600 transition-smooth">Contacto</a>
+                </nav>
+
+                <button onclick="scrollToContact()" class="gradient-sustainable text-white px-6 py-2 rounded-lg hover:opacity-90 shadow-sustainable transition-smooth">
+                    Contáctanos
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl lg:text-6xl font-bold mb-6">Viste como el planeta te lo permita</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Transformamos botellas plásticas en telas de alta calidad
+            </p>
+        </div>
+    </section>
+
+<!-- Imagen centrada -->
+    <div class="flex justify-center">
+      <img src="logo RENOVATEXTIL.jpg" alt="Moda sostenible" class="w-full max-w-lg rounded-2xl shadow-lg" style="width: 420px;">
+    </div>
+  </div>
+</section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">Nuestra Historia</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Desde la idea hasta la realidad: el recorrido de una visión sostenible 
+                    que está transformando la industria textil.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-3xl font-bold mb-6">¿Quiénes Somos?</h3>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Somos un equipo de innovadores comprometidos con crear un futuro más sostenible. 
+                        Combinamos tecnología avanzada con responsabilidad ambiental para ofrecer 
+                        soluciones textiles que no comprometen la calidad ni el planeta.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <svg class="text-green-600 mt-1 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span class="text-gray-600">100% materiales reciclados</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="text-green-600 mt-1 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span class="text-gray-600">Proceso de producción eco-friendly</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="text-green-600 mt-1 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span class="text-gray-600">Calidad premium garantizada</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gradient-accent rounded-2xl p-8 text-white">
+                    <h4 class="text-2xl font-bold mb-6">Impacto Ambiental</h4>
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold mb-2">1,000+</div>
+                            <div class="text-sm opacity-90">Botellas recicladas por metro de tela</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold mb-2">75%</div>
+                            <div class="text-sm opacity-90">Reducción de CO2 vs telas convencionales</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-3xl font-bold text-center mb-12">Nuestro Recorrido</h3>
+                <div class="space-y-8">
+                    <div class="bg-white rounded-lg shadow-sustainable p-8 hover:shadow-trust transition-smooth">
+                        <div class="flex flex-col md:flex-row md:items-center gap-6">
+                            <div class="gradient-sustainable text-white px-6 py-3 rounded-full font-bold text-lg flex-shrink-0">
+                                2023
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold mb-3">Investigación y Desarrollo</h4>
+                                <p class="text-gray-600">
+                                    Iniciamos la investigación para desarrollar un proceso innovador de transformación de botellas PET en fibras textiles de alta calidad.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sustainable p-8 hover:shadow-trust transition-smooth">
+                        <div class="flex flex-col md:flex-row md:items-center gap-6">
+                            <div class="gradient-sustainable text-white px-6 py-3 rounded-full font-bold text-lg flex-shrink-0">
+                                2024
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold mb-3">Primeras Pruebas</h4>
+                                <p class="text-gray-600">
+                                    Desarrollamos nuestros primeros prototipos de tela reciclada e hicimos pruebas con ellas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-sustainable p-8 hover:shadow-trust transition-smooth">
+                        <div class="flex flex-col md:flex-row md:items-center gap-6">
+                            <div class="gradient-sustainable text-white px-6 py-3 rounded-full font-bold text-lg flex-shrink-0">
+                                Presente
+                            </div>
+                            <div>
+                                <h4 class="text-2xl font-bold mb-3">Proceso de comercialización</h4>
+                                <p class="text-gray-600">
+                                    Estamos en el proceso del lanzamiento oficial de nuestra línea de telas sostenibles, ofreciendo soluciones textiles eco-friendly para la industria de la moda.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fabrics Section -->
+    <section id="telas" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">Nuestras Telas Disponibles</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Descubre nuestra colección de telas sostenibles, cada una diseñada 
+                    para ofrecer calidad superior mientras cuidamos el planeta.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Fabric 1 -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sustainable hover:shadow-trust transition-smooth">
+                    <div class="p-6 border-b border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-2xl font-bold">EcoSoft Premium</h3>
+                            <span class="gradient-sustainable text-white px-3 py-1 rounded-full text-xs font-semibold">RENOVATEXTIL</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-6">
+                            Tela suave y transpirable perfecta para ropa deportiva y casual
+
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">Textura:</h4>
+                                <p class="text-sm text-gray-600">Suave y ligera</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold mb-2">Colores disponibles:</h4>
+                                <div class="flex flex-wrap gap-1">
+                                    <span class="border border-gray-300 px-2 py-1 rounded text-xs">Blanco natural</span>
+                                    <span class="border border-gray-300 px-2 py-1 rounded text-xs">Gris perla</span>
+                                    <span class="border border-gray-300 px-2 py-1 rounded text-xs">Azul océano</span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold mb-2">Usos recomendados:</h4>
+                                <div class="flex flex-wrap gap-1">
+                                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">Camisetas</span>
+                                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">Ropa deportiva</span>
+                                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">Ropa interior</span>
+                                </div>
+                            </div>
+                            <div class="pt-4 border-t border-gray-200">
+                                <span class="text-sm font-semibold text-green-600 block mb-4">100% PET reciclado</span>
+                                <button onclick="scrollToContact()" class="w-full gradient-accent text-white py-2 px-4 rounded-lg hover:opacity-90 transition-smooth">
+                                    Solicitar Información
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fabric 2 -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sustainable hover:shadow-trust transition-smooth">
+                    <div class="p-6 border-b border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-2xl font-bold">GreenDenim</h3>
+                            <span class="gradient-sustainable text-white px-3 py-1 rounded-full text-xs font-semibold">RENOVATEXTIL</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-6">
+                            Denim resistente con la textura clásica pero 100% sostenible
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">Textura:</h4>
+                                <p class="text-sm text-gray-600">Resistente y duradera</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold mb-2">Colores disponibles:</h4>
+                                <div class="flex flex-wrap gap-1">
+                                    <span class="border border-gray-300 px-2 py-1 rounded text-xs">Azul índigo</span>
+                                    <span class="border border-gray-300 px-2 py-1 rounded text-xs">Negro carbón</span>
+                                    <span class="border border-gray-300 px-2 py-1 rounded text-xs">Gris humo</span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold mb-2">Usos recomendados:</h4>
+                                <div class="flex flex-wrap gap-1">
+                                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">Pantalones</span>
+                                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">Chaquetas</span>
+                                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">Overoles</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4 border-t border-gray-200">
+                                <span class="text-sm font-semibold text-green-600 block mb-4">100% PET reciclado</span>
+                                <button onclick="scrollToContact()" class="w-full gradient-accent text-white py-2 px-4 rounded-lg hover:opacity-90 transition-smooth">
+                                    Solicitar Información
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fabric 3 -->
+                <div class="bg-white rounded-lg border border-gray-200 shadow-sustainable hover:shadow-trust transition-smooth">
+                    <div class="p-6 border-b border-gray-200">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-2xl font-bold">SilkTouch Eco</h3>
+                            <span class="gradient-sustainable text-white px-3 py-1 rounded-full text-xs font-semibold">RENOVATEXTIL</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-6">
+                            Tela de textura sedosa ideal para prendas elegantes
+                        </p>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-semibold mb-2">Textura:</h4>
+                                <p class="text-sm text-gray-600">Sedosa y elegante</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold mb-2">Colores disponibles:</h4>
+                                <div class="flex flex-wrap gap-1">
+                                    <span class="border border-gray-300 px-2 py-1 rounded text-xs">Marfil</span>
+                                    <span class="border border-gray-300 px-2 py-1 rounded text-xs">Rosa polvoso</span>
+                                    <span class="border border-gray-300 px-2 py-1 rounded text-xs">Verde sage</span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="font-semibold mb-2">Usos recomendados:</h4>
+                                <div class="flex flex-wrap gap-1">
+                                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">Blusas</span>
+                                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">Vestidos</span>
+                                    <span class="bg-gray-100 px-2 py-1 rounded text-xs">Lencería</span>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-4 border-t border-gray-200">
+                                <span class="text-sm font-semibold text-green-600 block mb-4">100% PET reciclado</span>
+                                <button onclick="scrollToContact()" class="w-full gradient-accent text-white py-2 px-4 rounded-lg hover:opacity-90 transition-smooth">
+                                    Solicitar Información
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <div class="bg-gray-50 rounded-2xl p-8 max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold mb-4">¿Necesitas una tela personalizada?</h3>
+                    <p class="text-gray-600 mb-6">
+                        Trabajamos contigo para desarrollar telas que se adapten exactamente 
+                        a las necesidades de tu proyecto, manteniendo siempre nuestro compromiso 
+                        con la sostenibilidad.
+                    </p>
+                    <button onclick="scrollToContact()" class="gradient-hero text-white py-3 px-8 rounded-lg shadow-sustainable hover:opacity-90 transition-smooth">
+                        Consultar Tela Personalizada
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">Contáctanos</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    ¿Listo para formar parte del cambio? Hablemos sobre cómo nuestras 
+                    telas sostenibles pueden transformar tu proyecto.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Contact Form -->
+                <div class="bg-white rounded-lg shadow-sustainable p-8">
+                    <div class="flex items-center gap-3 mb-6">
+                        <svg class="text-green-600" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold">Envíanos un mensaje</h3>
+                    </div>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Nombre completo *</label>
+                            <input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Tu nombre completo">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Correo electrónico *</label>
+                            <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="tu@email.com">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Empresa (opcional)</label>
+                            <input type="text" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Nombre de tu empresa">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Mensaje *</label>
+                            <textarea name="message" required rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="Cuéntanos sobre tu proyecto y cómo podemos ayudarte..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full gradient-sustainable text-white py-3 px-6 rounded-lg hover:opacity-90 shadow-sustainable transition-smooth">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-lg shadow-trust p-8">
+                        <h3 class="text-2xl font-bold mb-6">Información de Contacto</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <svg class="text-green-600 mt-1 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <div>
+                                    <p class="font-semibold">Email</p>
+                                    <p class="text-gray-600">renovatextil2025@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <svg class="text-green-600 mt-1 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <div>
+                                    <p class="font-semibold">WhatsApp</p>
+                                    <p class="text-gray-600">(+57) 3012260673</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <svg class="text-green-600 mt-1 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <div>
+                                    <p class="font-semibold">Ubicación</p>
+                                    <p class="text-gray-600">Ciudad de Bogotá D.C, Colombia</p>
+                                     calle135 #151a-47</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gradient-accent text-white rounded-lg p-8">
+                        <h3 class="text-2xl font-bold mb-4">¿Por qué elegirnos?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                                <span>Calidad premium garantizada</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                                <span>100% materiales reciclados</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                                <span>Precios competitivos</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                                <span>Atención personalizada</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <div class="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                                <span>Compromiso ambiental real</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold text-green-500 mb-4">RENOVATEXTIL S.A.S</h3>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Transformamos botellas plásticas en telas sostenibles de alta calidad, 
+                        creando un futuro más verde para la industria textil.
+                    </p>
+                    <div class="flex space-x-4">
+                        <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-sm">f</span>
+                        </div>
+                        <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-sm">ig</span>
+                        </div>
+                        <div class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
+                            <span class="font-bold text-sm">in</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-green-500 transition-smooth">Inicio</a></li>
+                        <li><a href="#nosotros" class="text-gray-400 hover:text-green-500 transition-smooth">Nosotros</a></li>
+                        <li><a href="#telas" class="text-gray-400 hover:text-green-500 transition-smooth">Telas</a></li>
+                        <li><a href="#contacto" class="text-gray-400 hover:text-green-500 transition-smooth">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>renovatextil2025@gmail.com</li>
+                        <li>(+57) 3012260673</li>
+                        <li>Ciudad de Bogotá D.C, Colombia </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 my-8"></div>
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm">© 2025 RENOVATEXTIL S.A.S. Todos los derechos reservados.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-green-500 transition-smooth text-sm">Política de Privacidad</a>
+                    <a href="#" class="text-gray-400 hover:text-green-500 transition-smooth text-sm">Términos de Servicio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-4 right-4 bg-green-600 text-white px-6 py-4 rounded-lg shadow-lg transform translate-y-20 opacity-0 transition-all duration-300">
+        <p class="font-semibold">¡Mensaje enviado!</p>
+        <p class="text-sm">Nos pondremos en contacto contigo pronto.</p>
+    </div>
+
+    <script>
+        // Smooth scroll function
+        function scrollToContact() {
+            document.getElementById('contacto').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Smooth scroll for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show toast notification
+            const toast = document.getElementById('toast');
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            
+            // Reset form
+            this.reset();
+            
+            // Hide toast after 3 seconds
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+                toast.classList.remove('translate-y-0', 'opacity-100');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
